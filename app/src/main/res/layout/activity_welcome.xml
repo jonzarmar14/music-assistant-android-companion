@@ -1,0 +1,68 @@
+<!-- activity_welcome.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter IP" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextIP"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Port"
+        android:inputType="number" />
+
+    <Switch
+        android:id="@+id/switchConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextPort"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="16dp"
+        android:text="HTTPS"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBoxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchConnection"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:buttonTint="@android:color/black"
+        android:text="Remember" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxRemember"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="16dp"
+        android:text="Connect"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/black"
+        />
+
+</RelativeLayout>
